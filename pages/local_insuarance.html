@@ -1,603 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon Icon Include -->
-    <link
-      rel="shortcut icon"
-      type="image/jpg"
-      href="../statics/assets/img/pro-insurance.jpg"
-    />
-    <!-- Favicon Icon Include -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap Include -->
-    <link rel="stylesheet" href="../statics/assets/css/bootstrap.css" />
-    <!-- Bootstrap Include -->
+  <!-- Favicon Icon Include -->
+  <link rel="shortcut icon" type="image/jpg" href="../statics/assets/img/pro-insurance.jpg" />
+  <!-- Favicon Icon Include -->
 
-    <!-- CSS Files Include -->
-    <link rel="stylesheet" href="../statics/assets/css/custom_selectbox.css" />
-    <link rel="stylesheet" href="../statics/assets/css/custom_input.css" />
-    <link
-      rel="stylesheet"
-      href="../statics/local_insuarance/css/local_insuarance.css"
-    />
-    <!-- CSS Files Include -->
+  <!-- Bootstrap Include -->
+  <link rel="stylesheet" href="../statics/assets/css/bootstrap.css" />
+  <!-- Bootstrap Include -->
 
-    <title>Local_Insurance Page</title>
-  </head>
+  <!-- CSS Files Include -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="../statics/assets/css/custom_selectbox.css" />
+  <link rel="stylesheet" href="../statics/assets/css/custom_input.css" />
+  <link rel="stylesheet" href="../statics/local_insuarance/css/local_insuarance.css" />
+  <!-- CSS Files Include -->
 
-  <body style="background-color: rgba(2, 24, 45, 255)">
-    <!-- <div id="preloader"></div> -->
+  <title>Local_Insurance Page</title>
+</head>
 
-    <!-- Preloader Section -->
-    <div class="preloader-activate preloader-active open_tm_preloader">
-      <div class="preloader-area-wrap">
-        <div
-          class="spinner d-flex justify-content-center align-items-center h-100"
-        >
-          <div class="bounce1"></div>
-          <div class="bounce2"></div>
-          <div class="bounce3"></div>
+<body style="background-color: rgba(2, 24, 45, 255)">
+  <!-- <div id="preloader"></div> -->
+
+  <!-- Preloader Section -->
+  <div class="preloader-activate preloader-active open_tm_preloader">
+    <div class="preloader-area-wrap">
+      <div class="spinner d-flex justify-content-center align-items-center h-100">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Preloader Section -->
+
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-1">
+          <div class="wrapper-left">
+            <div class="navigation">
+              <ul>
+                <li>
+                  <a href="#">
+                    <div>
+                      <img src="../statics/assets/img/pro-insurance.jpg" alt="Pro | Insurance" width="250" height="150">
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon">
+                      <i class="fa fa-home" aria-hidden="true"></i>
+                    </span>
+                    <span class="menu_title">Company</span>
+                  </a>
+                </li>
+                <li>
+                    <a href="#">
+                      <span class="icon">
+                        <i class="fa fa-industry" aria-hidden="true"></i>
+                      </span>
+                      <span class="menu_title">Insurance</span>
+                    </a>
+
+                    <!-- <div class="m-menu__submenu">
+                      <span class="m-menu__arrow"></span>
+                      <ul class="m-menu__subnav">
+                        <li class="m-menu__item " aria-haspopup="true">
+                          <a href="/localInsurance" class="m-menu__link ">
+                            <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                              <span></span>
+                            </i>
+                            <span class="m-menu__link-text" style="color: aqua">
+                              Local Insurance
+                            </span>
+                          </a>
+                        </li>
+                        <li class="m-menu__item " aria-haspopup="true">
+                          <a href="" class="m-menu__link">
+                            <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                              <span></span>
+                            </i>
+                            <span class="m-menu__link-text m-menu-text" style="color: aqua">
+                              Travel Insurance
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div> -->
+
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon">
+                      <i class="fa fa-flag" aria-hidden="true"></i>
+                    </span>
+                    <span class="menu_title">Reports</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon">
+                      <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    </span>
+                    <span class="menu_title">Logout</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-11">
+          <div class="wrapper_right">
+            <section class="page_title">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="m-subheader__title">
+                      Operator
+                      <span style="color: rgb(199 71 50)">|</span> Insurance
+                      <span style="color: rgb(199 71 50)">|</span> Local Insurance
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="cart_box_up">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card_up">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <div class="input-group">
+                            <label for="from_date">From Date</label>
+                            <input type="date" name="" id="from_date" required />
+                          </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                          <div class="input-group">
+                            <label for="to_date">To Date</label>
+                            <input type="date" name="" id="to_date" required />
+                          </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                          <div class="input-group">
+                            <label for="numberOfDays">Number Of Days</label>
+                            <input type="number" name="" id="numberOfDays" placeholder=" " required />
+                          </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                          <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="" id="email" placeholder=" " autocomplete="off" required />
+                          </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                          <div class="input-group">
+                            <label for="address">Address</label>
+                            <input type="text" name="" id="address" placeholder=" " required />
+                          </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                          <div class="input-group">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="text" name="" id="phoneNumber" placeholder=" " required />
+                          </div>
+                        </div>
+
+                        <div class="col-sm-4 mb-3">
+                          <div class="select">
+                            <select class="select-text" required>
+                              <option value="" disabled selected></option>
+                              <option value="5000">5000 AZN</option>
+                            </select>
+                            <span class="select-highlight"></span>
+                            <span class="select-bar"></span>
+                            <label class="select-label">Sum Insured</label>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-4 mb-3">
+                          <div class="select">
+                            <select class="select-text" required>
+                              <option value="" disabled selected></option>
+                              <option value="foreign_country">
+                                Go to foreign country
+                              </option>
+                              <option value="walking">Go to walking</option>
+                            </select>
+                            <span class="select-highlight"></span>
+                            <span class="select-bar"></span>
+                            <label class="select-label">Purpose</label>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <hr id="hr_line" />
+
+            <section id="cart_box_down">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card_down">
+
+                      <div id="rowsId">
+                        <div class="row">
+                          <div class="col-6 col-sm-12 col-md-2">
+                            <div class="input-group">
+                              <label for="name">Name</label>
+                              <input type="text" name="" id="name" placeholder=" " required />
+                            </div>
+                          </div>
+
+                          <div class="col-6 col-sm-12 col-md-2">
+                            <div class="input-group">
+                              <label for="surname">Surname</label>
+                              <input type="text" name="" id="surname" placeholder=" " required />
+                            </div>
+                          </div>
+
+                          <div class="
+                                col-6 col-sm-12 col-md-2
+                                d-flex
+                                justify-content-center
+                                align-items-center
+                              ">
+                            <div class="select">
+                              <select class="select-text" required>
+                                <option value="" disabled selected></option>
+                                <option value="1">Male</option>
+                                <option value="0">Female</option>
+                              </select>
+                              <span class="select-highlight"></span>
+                              <span class="select-bar"></span>
+                              <label class="select-label">Gender</label>
+                            </div>
+                          </div>
+
+                          <div class="col-6 col-sm-12 col-md-2">
+                            <div class="input-group">
+                              <label for="fin_passport">FIN / Passport</label>
+                              <input type="text" name="" id="fin_passport" placeholder=" " required />
+                            </div>
+                          </div>
+
+                          <div class="col-6 col-sm-12 col-md-3">
+                            <div class="input-group">
+                              <label for="birth">Birth</label>
+                              <input type="date" name="" id="birth" required />
+                            </div>
+                          </div>
+
+                          <div class="col-6 col-sm-12 col-md-1 d-flex justify-content-center align-items-center">
+                            <input id="insured-0" name="insured" style="height: 20px; width: 20px;"
+                              type="radio" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="rowsId">
+                        <div class="row">
+                          <div class="col-6 col-sm-12 col-md-2">
+                            <div class="input-group">
+                              <label for="name">Name</label>
+                              <input type="text" name="" id="name" placeholder=" " required />
+                            </div>
+                          </div>
+
+                          <div class="col-6 col-sm-12 col-md-2">
+                            <div class="input-group">
+                              <label for="surname">Surname</label>
+                              <input type="text" name="" id="surname" placeholder=" " required />
+                            </div>
+                          </div>
+
+                          <div class="
+                                col-6 col-sm-12 col-md-2
+                                d-flex
+                                justify-content-center
+                                align-items-center
+                              ">
+                            <div class="select">
+                              <select class="select-text" required>
+                                <option value="" disabled selected></option>
+                                <option value="1">Male</option>
+                                <option value="0">Female</option>
+                              </select>
+                              <span class="select-highlight"></span>
+                              <span class="select-bar"></span>
+                              <label class="select-label">Gender</label>
+                            </div>
+                          </div>
+
+                          <div class="col-6 col-sm-12 col-md-2">
+                            <div class="input-group">
+                              <label for="fin_passport">FIN / Passport</label>
+                              <input type="text" name="" id="fin_passport" placeholder=" " required />
+                            </div>
+                          </div>
+
+                          <div class="col-6 col-sm-12 col-md-3">
+                            <div class="input-group">
+                              <label for="birth">Birth</label>
+                              <input type="date" name="" id="birth" required />
+                            </div>
+                          </div>
+
+                          <div class="col-6 col-sm-12 col-md-1 d-flex justify-content-center align-items-center">
+                            <input id="insured-0" name="insured" style="height: 20px; width: 20px;"
+                              type="radio" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="rowsId">
+                        <div class="row">
+                          <div class="col-6 col-sm-12 col-md-2">
+                            <div class="input-group">
+                              <label for="name">Name</label>
+                              <input type="text" name="" id="name" placeholder=" " required />
+                            </div>
+                          </div>
+
+                          <div class="col-6 col-sm-12 col-md-2">
+                            <div class="input-group">
+                              <label for="surname">Surname</label>
+                              <input type="text" name="" id="surname" placeholder=" " required />
+                            </div>
+                          </div>
+
+                          <div class="
+                                col-6 col-sm-12 col-md-2
+                                d-flex
+                                justify-content-center
+                                align-items-center
+                              ">
+                            <div class="select">
+                              <select class="select-text" required>
+                                <option value="" disabled selected></option>
+                                <option value="1">Male</option>
+                                <option value="0">Female</option>
+                              </select>
+                              <span class="select-highlight"></span>
+                              <span class="select-bar"></span>
+                              <label class="select-label">Gender</label>
+                            </div>
+                          </div>
+
+                          <div class="col-6 col-sm-12 col-md-2">
+                            <div class="input-group">
+                              <label for="fin_passport">FIN / Passport</label>
+                              <input type="text" name="" id="fin_passport" placeholder=" " required />
+                            </div>
+                          </div>
+
+                          <div class="col-6 col-sm-12 col-md-3">
+                            <div class="input-group">
+                              <label for="birth">Birth</label>
+                              <input type="date" name="" id="birth" required />
+                            </div>
+                          </div>
+
+                          <div class="col-6 col-sm-12 col-md-1 d-flex justify-content-center align-items-center">
+                            <input id="insured-0" name="insured" style="height: 20px; width: 20px;"
+                              type="radio" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="rowsId">
+                        <div class="row">
+                          <div class="col-6 col-sm-12 col-md-2">
+                            <div class="input-group">
+                              <label for="name">Name</label>
+                              <input type="text" name="" id="name" placeholder=" " required />
+                            </div>
+                          </div>
+
+                          <div class="col-6 col-sm-12 col-md-2">
+                            <div class="input-group">
+                              <label for="surname">Surname</label>
+                              <input type="text" name="" id="surname" placeholder=" " required />
+                            </div>
+                          </div>
+
+                          <div class="
+                                col-6 col-sm-12 col-md-2
+                                d-flex
+                                justify-content-center
+                                align-items-center
+                              ">
+                            <div class="select">
+                              <select class="select-text" required>
+                                <option value="" disabled selected></option>
+                                <option value="1">Male</option>
+                                <option value="0">Female</option>
+                              </select>
+                              <span class="select-highlight"></span>
+                              <span class="select-bar"></span>
+                              <label class="select-label">Gender</label>
+                            </div>
+                          </div>
+
+                          <div class="col-6 col-sm-12 col-md-2">
+                            <div class="input-group">
+                              <label for="fin_passport">FIN / Passport</label>
+                              <input type="text" name="" id="fin_passport" placeholder=" " required />
+                            </div>
+                          </div>
+
+                          <div class="col-6 col-sm-12 col-md-3">
+                            <div class="input-group">
+                              <label for="birth">Birth</label>
+                              <input type="date" name="" id="birth" required />
+                            </div>
+                          </div>
+
+                          <div class="col-6 col-sm-12 col-md-1 d-flex justify-content-center align-items-center">
+                            <input id="insured-0" name="insured" style="height: 20px; width: 20px;"
+                              type="radio" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="btn_group d-flex justify-content-end mt-4">
+                        <button type="button" class="btn btn-primary mr-2" id="addInsuranceBtn">
+                          Add
+                        </button>
+
+                        <button type="button" class="btn btn-primary mr-2" id="countButton">
+                          Count
+                        </button>
+                        <button type="submit" class="btn btn-success mr-2" id="saveButton">
+                          Issue Policy
+                        </button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Preloader Section -->
+  </div>
 
-    <div class="wrapper">
-      <section class="page_title">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h3 class="m-subheader__title">
-                Operator
-                <span style="color: rgb(199 71 50)">|</span> Insurance
-                <span style="color: rgb(199 71 50)">|</span> Local Insurance
-              </h3>
-            </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <!-- JS Links Includes -->
+  <script src="../statics/assets/js/custom_input.js"></script>
+  <script src="../statics/assets/js/main.js"></script>
+  <!-- JS Links Includes -->
+</body>
 
-      <section id="cart_box_up">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card_up">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="input-group">
-                      <label for="from_date">From Date</label>
-                      <input type="date" name="" id="from_date" required />
-                    </div>
-                  </div>
-
-                  <div class="col-sm-4">
-                    <div class="input-group">
-                      <label for="to_date">To Date</label>
-                      <input type="date" name="" id="to_date" required />
-                    </div>
-                  </div>
-
-                  <div class="col-sm-4">
-                    <div class="input-group">
-                      <label for="numberOfDays">Number Of Days</label>
-                      <input
-                        type="number"
-                        name=""
-                        id="numberOfDays"
-                        placeholder=" "
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div class="col-sm-4">
-                    <div class="input-group">
-                      <label for="email">Email</label>
-                      <input
-                        type="email"
-                        name=""
-                        id="email"
-                        placeholder=" "
-                        autocomplete="on"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div class="col-sm-4">
-                    <div class="input-group">
-                      <label for="address">Address</label>
-                      <input
-                        type="text"
-                        name=""
-                        id="address"
-                        placeholder=" "
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div class="col-sm-4">
-                    <div class="input-group">
-                      <label for="phoneNumber">Phone Number</label>
-                      <input
-                        type="text"
-                        name=""
-                        id="phoneNumber"
-                        placeholder=" "
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div class="col-sm-4 mb-3">
-                    <div class="select">
-                      <select class="select-text" required>
-                        <option value="" disabled selected></option>
-                        <option value="5000">5000 AZN</option>
-                      </select>
-                      <span class="select-highlight"></span>
-                      <span class="select-bar"></span>
-                      <label class="select-label">Sum Insured</label>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-4 mb-3">
-                    <div class="select">
-                      <select class="select-text" required>
-                        <option value="" disabled selected></option>
-                        <option value="foreign_country">
-                          Go to foreign country
-                        </option>
-                        <option value="walking">Go to walking</option>
-                      </select>
-                      <span class="select-highlight"></span>
-                      <span class="select-bar"></span>
-                      <label class="select-label">Purpose</label>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-4 mb-3">
-                    <div class="select">
-                      <select class="select-text" required>
-                        <option value="" disabled selected></option>
-                        <option value="foreign_country">
-                          Go to foreign country
-                        </option>
-                        <option value="walking">Go to walking</option>
-                      </select>
-                      <span class="select-highlight"></span>
-                      <span class="select-bar"></span>
-                      <label class="select-label">Purpose</label>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-4 mb-3">
-                    <div class="select">
-                      <select class="select-text" required>
-                        <option value="" disabled selected></option>
-                        <option value="foreign_country">
-                          Go to foreign country
-                        </option>
-                        <option value="walking">Go to walking</option>
-                      </select>
-                      <span class="select-highlight"></span>
-                      <span class="select-bar"></span>
-                      <label class="select-label">Purpose</label>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-4 mb-3">
-                    <div class="select">
-                      <select class="select-text" required>
-                        <option value="" disabled selected></option>
-                        <option value="foreign_country">
-                          Go to foreign country
-                        </option>
-                        <option value="walking">Go to walking</option>
-                      </select>
-                      <span class="select-highlight"></span>
-                      <span class="select-bar"></span>
-                      <label class="select-label">Purpose</label>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-4 mb-3">
-                    <div class="select">
-                      <select class="select-text" required>
-                        <option value="" disabled selected></option>
-                        <option value="foreign_country">
-                          Go to foreign country
-                        </option>
-                        <option value="walking">Go to walking</option>
-                      </select>
-                      <span class="select-highlight"></span>
-                      <span class="select-bar"></span>
-                      <label class="select-label">Purpose</label>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-4 mb-3">
-                    <div class="select">
-                      <select class="select-text" required>
-                        <option value="" disabled selected></option>
-                        <option value="foreign_country">
-                          Go to foreign country
-                        </option>
-                        <option value="walking">Go to walking</option>
-                      </select>
-                      <span class="select-highlight"></span>
-                      <span class="select-bar"></span>
-                      <label class="select-label">Purpose</label>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <hr id="hr_line" />
-
-      <section id="cart_box_down">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card_down">
-                <div id="rowsId">
-                  <div class="row">
-                    <div class="col-6 col-sm-12 col-md-2">
-                      <div class="input-group">
-                        <label for="name">Name</label>
-                        <input
-                          type="text"
-                          name=""
-                          id="name"
-                          placeholder=" "
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-sm-12 col-md-2">
-                      <div class="input-group">
-                        <label for="surname">Surname</label>
-                        <input
-                          type="text"
-                          name=""
-                          id="surname"
-                          placeholder=" "
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div
-                      class="
-                        col-6 col-sm-12 col-md-2
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                      "
-                    >
-                      <div class="select">
-                        <select class="select-text" required>
-                          <option value="" disabled selected></option>
-                          <option value="1">Male</option>
-                          <option value="0">Female</option>
-                        </select>
-                        <span class="select-highlight"></span>
-                        <span class="select-bar"></span>
-                        <label class="select-label">Gender</label>
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-sm-12 col-md-2">
-                      <div class="input-group">
-                        <label for="fin_passport">FIN / Passport</label>
-                        <input
-                          type="text"
-                          name=""
-                          id="fin_passport"
-                          placeholder=" "
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-sm-12 col-md-3">
-                      <div class="input-group">
-                        <label for="birth">Birth</label>
-                        <input type="date" name="" id="birth" required />
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-sm-12 col-md-1 d-flex justify-content-center">
-                      <input
-                        id="insured-0"
-                        name="insured"
-                        style="height: 20px; width: 20px; margin-top: 35px"
-                        type="radio"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div id="rowsId">
-                  <div class="row">
-                    <div class="col-6 col-sm-12 col-md-2">
-                      <div class="input-group">
-                        <label for="name">Name</label>
-                        <input
-                          type="text"
-                          name=""
-                          id="name"
-                          placeholder=" "
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-sm-12 col-md-2">
-                      <div class="input-group">
-                        <label for="surname">Surname</label>
-                        <input
-                          type="text"
-                          name=""
-                          id="surname"
-                          placeholder=" "
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div
-                      class="
-                        col-6 col-sm-12 col-md-2
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                      "
-                    >
-                      <div class="select">
-                        <select class="select-text" required>
-                          <option value="" disabled selected></option>
-                          <option value="1">Male</option>
-                          <option value="0">Female</option>
-                        </select>
-                        <span class="select-highlight"></span>
-                        <span class="select-bar"></span>
-                        <label class="select-label">Gender</label>
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-sm-12 col-md-2">
-                      <div class="input-group">
-                        <label for="fin_passport">FIN / Passport</label>
-                        <input
-                          type="text"
-                          name=""
-                          id="fin_passport"
-                          placeholder=" "
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-sm-12 col-md-3">
-                      <div class="input-group">
-                        <label for="birth">Birth</label>
-                        <input type="date" name="" id="birth" required />
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-sm-12 col-md-1 d-flex justify-content-center">
-                      <input
-                        id="insured-0"
-                        name="insured"
-                        style="height: 20px; width: 20px; margin-top: 35px"
-                        type="radio"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div id="rowsId">
-                  <div class="row">
-                    <div class="col-6 col-sm-12 col-md-2">
-                      <div class="input-group">
-                        <label for="name">Name</label>
-                        <input
-                          type="text"
-                          name=""
-                          id="name"
-                          placeholder=" "
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-sm-12 col-md-2">
-                      <div class="input-group">
-                        <label for="surname">Surname</label>
-                        <input
-                          type="text"
-                          name=""
-                          id="surname"
-                          placeholder=" "
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div
-                      class="
-                        col-6 col-sm-12 col-md-2
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                      "
-                    >
-                      <div class="select">
-                        <select class="select-text" required>
-                          <option value="" disabled selected></option>
-                          <option value="1">Male</option>
-                          <option value="0">Female</option>
-                        </select>
-                        <span class="select-highlight"></span>
-                        <span class="select-bar"></span>
-                        <label class="select-label">Gender</label>
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-sm-12 col-md-2">
-                      <div class="input-group">
-                        <label for="fin_passport">FIN / Passport</label>
-                        <input
-                          type="text"
-                          name=""
-                          id="fin_passport"
-                          placeholder=" "
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-sm-12 col-md-3">
-                      <div class="input-group">
-                        <label for="birth">Birth</label>
-                        <input type="date" name="" id="birth" required />
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-sm-12 col-md-1 d-flex justify-content-center">
-                      <input
-                        id="insured-0"
-                        name="insured"
-                        style="height: 20px; width: 20px; margin-top: 35px"
-                        type="radio"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div id="rowsId">
-                  <div class="row">
-                    <div class="col-6 col-sm-12 col-md-2">
-                      <div class="input-group">
-                        <label for="name">Name</label>
-                        <input
-                          type="text"
-                          name=""
-                          id="name"
-                          placeholder=" "
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-sm-12 col-md-2">
-                      <div class="input-group">
-                        <label for="surname">Surname</label>
-                        <input
-                          type="text"
-                          name=""
-                          id="surname"
-                          placeholder=" "
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div
-                      class="
-                        col-6 col-sm-12 col-md-2
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                      "
-                    >
-                      <div class="select">
-                        <select class="select-text" required>
-                          <option value="" disabled selected></option>
-                          <option value="1">Male</option>
-                          <option value="0">Female</option>
-                        </select>
-                        <span class="select-highlight"></span>
-                        <span class="select-bar"></span>
-                        <label class="select-label">Gender</label>
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-sm-12 col-md-2">
-                      <div class="input-group">
-                        <label for="fin_passport">FIN / Passport</label>
-                        <input
-                          type="text"
-                          name=""
-                          id="fin_passport"
-                          placeholder=" "
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-sm-12 col-md-3">
-                      <div class="input-group">
-                        <label for="birth">Birth</label>
-                        <input type="date" name="" id="birth" required />
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-sm-12 col-md-1 d-flex justify-content-center">
-                      <input
-                        id="insured-0"
-                        name="insured"
-                        style="height: 20px; width: 20px; margin-top: 35px"
-                        type="radio"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary countBtn"
-                    id="addInsuranceBtn"
-                  >
-                    Add
-                  </button>
-
-                  <button
-                    type="button"
-                    class="btn btn-primary countBtn"
-                    id="countButton"
-                  >
-                    Count
-                  </button>
-                  <button type="submit" class="btn btn-success" id="saveButton">
-                    Issue Policy
-                  </button>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- JS Links Includes -->
-    <script src="../statics/assets/js/custom_input.js"></script>
-    <script src="../statics/assets/js/main.js"></script>
-    <!-- JS Links Includes -->
-  </body>
 </html>
