@@ -1,0 +1,159 @@
+/* Common CSS Styles For Login Pages */
+
+.h-88vh {
+    height: 88vh;
+}
+
+.bg_photo {
+    background-image: url(../../assets/img/pro-insurance.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.color-#fff{
+    color: #fff;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+/* Common CSS Styles For Login Pages */
+
+/* Login Page Styles */
+
+.login_box_style {
+    width: 70%!important;
+}
+
+.login_title {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.forget_password p {
+    text-align: right;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-style: italic;
+    margin-right: 5px;
+    text-decoration: underline;
+}
+
+.login_btn {
+    width: 100%;
+    background-color: #840ad9;
+    border: none;
+    padding: 0.6rem 3em;
+    color: #fff;
+    border-radius: 60px;
+    text-align: center;
+    outline: none!important;
+    cursor: pointer;
+}
+
+
+/* Login Page Styles */
+
+
+/* Upgrade of Custom Inputs Styles */
+
+.input-group:focus-within label,
+.input-group input:not(:placeholder-shown) ~ label,
+.input-group label.shown_field_title  {
+    background-color: rgba(2, 24, 45, 255);
+}
+
+.input-group:focus-within label,
+.input-group input:not(:placeholder-shown) ~ label {
+    color: #2f80ed!important;
+}
+
+.custom_login_input input, .custom_login_input label {
+    color: #e4e4e4!important;
+}
+
+.custom_label:focus-within label,
+.custom_label input:not(:placeholder-shown) ~ label,
+.custom_label label.shown_field_title {
+    background-color: #ffffff!important;
+}
+
+/* Upgrade of Custom Inputs Styles */
+
+/* Login Page Footer */
+
+.social_icon {
+    font-size: 50px!important;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.social_icon .fa-whatsapp {
+    color: #4a8a4a;
+}
+
+.social_icon .fa-telegram, .social_icon .fa-phone {
+    font-size: 47px!important;
+}
+
+.social_icon .fa-telegram {
+    color: #d0d0d0;
+}
+
+.social_icon .fa-phone {
+    color: #1d948f;
+}
+
+/* Login Page Footer */
+
+
+/* Login Page Responsive Screen */
+@media only screen and (min-width: 200px) {
+    .login_box_style {
+        width: 95%!important;
+    }
+    .bg_photo {
+        background-size: cover!important;
+        margin-top: 10%!important;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .social_icon {
+        font-size: 83px!important;
+        margin-right: 20px!important;
+    }
+    .social_icon .fa-telegram, .social_icon .fa-phone {
+        font-size: 80px!important;
+    }
+    .bg_photo {
+        background-size: contain!important;
+        margin-top: 0!important;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .login_box_style {
+        width: 85%!important;
+    }
+}
+
+@media only screen and (min-width: 1030px) {
+    .login_box_style {
+        width: 70%!important;
+    }
+    .social_icon {
+        font-size: 50px!important;
+        margin-right: 15px!important;
+    }
+    .social_icon .fa-telegram, .social_icon .fa-phone {
+        font-size: 47px!important;
+    }
+}
+/* Login Page Responsive Screen */
