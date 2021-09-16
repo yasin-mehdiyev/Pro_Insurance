@@ -65,7 +65,7 @@
 .select-text:focus ~ .select-label,
 .select-text:valid ~ .select-label {
   color: var(--text);
-  top: -10px;
+  top: -16px;
   transition: 0.2s ease all;
   font-size: 14px;
 }

@@ -25,7 +25,6 @@ ul{
 
 #cart_box_up,
 #cart_box_down {
-  margin: 1rem 1rem 0.1rem 1rem;
   padding-bottom: 1rem;
 }
 
@@ -45,6 +44,10 @@ ul{
 #hr_line {
   border: 1px solid rgb(180, 180, 180);
   margin-bottom: 2rem;
+}
+
+#hr_line_down {
+  border: 1px solid rgb(218 208 208);
 }
 
 /* Popups and Hr line Styles */
