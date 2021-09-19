@@ -15,7 +15,6 @@ ul{
 
 .page_title .m-subheader__title {
   font-size: 1.55rem;
-  font-style: oblique;
   color: #fff;
 }
 
@@ -125,3 +124,56 @@ ul{
 }
 
 /* Sidebar Menu Styles */
+
+
+/* Card Up and Card Down of Local Insuarance Responsive Page Section */
+
+@media only screen and (max-width: 359px) {
+  .btn_group {
+    flex-wrap: wrap;
+  }
+
+  .btn_group button {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .select {
+    margin-top: 10px!important;
+    margin-bottom: 10px!important;
+  }
+}
+
+/* Card Up and Card Down of Local Insuarance Responsive Page Section */
+
+/* Card Up Title responsive proporities */
+
+@media only screen and (min-width: 300px) {
+  .page_title .m-subheader__title {
+    font-size: 15px!important;
+    line-height: 25px!important;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .page_title .m-subheader__title {
+    font-size: 17px!important;
+    line-height: 26px!important;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .page_title .m-subheader__title {
+    font-size: 19px!important;
+    line-height: 27px!important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .page_title .m-subheader__title {
+    font-size: 25px!important;
+  }
+}
+
+/* Card Up Title responsive proporities */
