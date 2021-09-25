@@ -49,29 +49,29 @@
             <div class="col-12 col-md-6 bg_photo"></div>
             <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
                 <div class="login_box_style">
-                    <h3 class="login_title">Qeydiyyat</h3>
                     <form action="" class="form_actions">
-                        <div class="input-group custom_login_input mb-4">
-                            <label for="username">İstifadəçi adı</label>
+                        <div class="input-group custom_login_input mb-4 w-80 ml-10">
+                            <label for="username">Username</label>
                             <input type="text" name="" id="username" placeholder=" " required />
                         </div>
 
-                        <div class="input-group custom_login_input">
-                            <label for="password">Şifrə</label>
+                        <div class="input-group custom_login_input w-80 ml-10">
+                            <label for="password">Password</label>
                             <input type="password" name="" id="password" placeholder=" " required />
+                        </div>
+
+                        <div class="d-flex justify-content-center mt-3 mb-3">
+                            <button type="submit" class="login_btn">
+                                Login
+                            </button>
                         </div>
 
                         <div class="forget_password">
                             <p id="forgetPassword" data-toggle="modal" data-target="#forgetPass">
-                                Şifrəmi unutmuşam
+                                Forget password
                             </p>
                         </div>
 
-                        <div class="d-flex justify-content-center">
-                            <button type="submit" class="login_btn">
-                                Daxil Ol
-                            </button>
-                        </div>
                     </form>
                 </div>
             </div>
@@ -106,7 +106,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title text-center" id="forgetPassLabel">Şifrəni Yenilə</h5>
+                    <h5 class="modal-title text-center" id="forgetPassLabel">Reset Password</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="outline: none!important;">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -120,8 +120,8 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
-                    <button type="submit" class="btn btn-primary" id="submitHandler">Göndər</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-danger" id="submitHandler">Send</button>
                 </div>
             </div>
         </div>
