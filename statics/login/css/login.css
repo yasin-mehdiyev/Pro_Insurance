@@ -27,6 +27,24 @@
     margin-left: 5%;
 }
 
+.td-none {
+    text-decoration: none!important;
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px rgba(2, 24, 45, 255) inset !important;
+}
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill
+{
+ -webkit-text-fill-color: #ffffff !important;
+}
+
 /* Common CSS Styles For Login Pages */
 
 /* Login Page Styles */
@@ -62,6 +80,10 @@
 
 /* Upgrade of Custom Inputs Styles */
 
+.autoComplete_border input {
+    border-radius: 7px;
+}
+
 .input-group:focus-within label,
 .input-group input:not(:placeholder-shown) ~ label,
 .input-group label.shown_field_title  {
@@ -75,6 +97,7 @@
 
 .custom_login_input input, .custom_login_input label {
     color: #e4e4e4!important;
+    transition: 0.3s ease;
 }
 
 .custom_label:focus-within label,
@@ -88,7 +111,7 @@
 /* Login Page Footer */
 
 .social_icon {
-    font-size: 50px!important;
+    font-size: 40px!important;
     margin-right: 15px;
     cursor: pointer;
 }
@@ -106,7 +129,7 @@
 }
 
 .social_icon .fa-phone {
-    color: #1d948f;
+    color: #D40B0C;
 }
 
 /* Login Page Footer */
@@ -148,11 +171,13 @@
         width: 70%!important;
     }
     .social_icon {
-        font-size: 50px!important;
+        font-size: 40px!important;
         margin-right: 15px!important;
     }
     .social_icon .fa-telegram, .social_icon .fa-phone {
-        font-size: 47px!important;
+        font-size: 37px!important;
     }
 }
 /* Login Page Responsive Screen */
+
+
