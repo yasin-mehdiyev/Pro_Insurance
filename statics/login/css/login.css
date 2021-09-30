@@ -32,17 +32,28 @@
 }
 
 /* Change the white to any color */
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
+
+.webkit-email:-webkit-autofill,
+.webkit-email:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0 30px rgba(2, 24, 45, 255) inset !important;
 }
 
+.webkit-reset:-webkit-autofill,
+.webkit-reset:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 30px rgb(255 255 255) inset !important;
+}
+
 /*Change text in autofill textbox*/
-input:-webkit-autofill
-{
+.webkit-email:-webkit-autofill {
  -webkit-text-fill-color: #ffffff !important;
+}
+
+.webkit-reset:-webkit-autofill {
+ -webkit-text-fill-color: #000000 !important;
+}
+
+.webkit-reset {
+  border-radius: 10px;
 }
 
 /* Common CSS Styles For Login Pages */
@@ -51,7 +62,6 @@ input:-webkit-autofill
 
 .login_box_style {
     width: 70%!important;
-    margin-top: 15%;
 }
 
 .forget_password p {
@@ -97,7 +107,6 @@ input:-webkit-autofill
 
 .custom_login_input input, .custom_login_input label {
     color: #e4e4e4!important;
-    transition: 0.3s ease;
 }
 
 .custom_label:focus-within label,
@@ -108,37 +117,54 @@ input:-webkit-autofill
 
 /* Upgrade of Custom Inputs Styles */
 
-/* Login Page Footer */
+/* Refactoring Login Page Footer Social Icons.... */
 
-.social_icon {
-    font-size: 40px!important;
-    margin-right: 15px;
-    cursor: pointer;
+.login-footer ul li {
+    margin-right: 1rem;
 }
 
-.social_icon .fa-whatsapp {
-    color: #4a8a4a;
+.login-footer ul li:first-child {
+    padding: 0.5rem 0.5rem;
+    border: 1px solid #d40b0c;
+    border-radius: 10px;
 }
 
-.social_icon .fa-telegram, .social_icon .fa-phone {
-    font-size: 47px!important;
+.login-footer ul li a {
+    color: #fff;
 }
 
-.social_icon .fa-telegram {
-    color: #d0d0d0;
+.login-footer ul li:nth-child(1) a {
+    font-size: 18px;
 }
 
-.social_icon .fa-phone {
-    color: #D40B0C;
+.login-footer ul li:nth-child(2) a, .login-footer ul li:nth-child(3) a {
+    font-size: 28px;
 }
 
-/* Login Page Footer */
+.login-footer ul li a .fa-phone {
+    color: #d40b0c;
+}
+
+.login-footer ul li a .fa-whatsapp, .login-footer ul li a .fa-telegram {
+    border-radius: 100%;
+}
+
+.login-footer ul li a .fa-whatsapp {
+    background: green;
+}
+
+.login-footer ul li a .fa-telegram {
+    background: #2424eeeb;
+}
+
+/* Refactoring Login Page Footer Social Icons.... */
 
 
 /* Login Page Responsive Screen */
 @media only screen and (min-width: 200px) {
     .login_box_style {
         width: 95%!important;
+        margin-top: 0;
     }
     .bg_photo {
         background-size: cover!important;
@@ -147,12 +173,8 @@ input:-webkit-autofill
 }
 
 @media only screen and (min-width: 767px) {
-    .social_icon {
-        font-size: 83px!important;
-        margin-right: 20px!important;
-    }
-    .social_icon .fa-telegram, .social_icon .fa-phone {
-        font-size: 80px!important;
+    .login_box_style {
+        margin-top: 25%;
     }
     .bg_photo {
         background-size: contain!important;
@@ -163,19 +185,13 @@ input:-webkit-autofill
 @media only screen and (min-width: 1024px) {
     .login_box_style {
         width: 75%!important;
+        margin-top: 17%;
     }
 }
 
 @media only screen and (min-width: 1030px) {
     .login_box_style {
         width: 70%!important;
-    }
-    .social_icon {
-        font-size: 40px!important;
-        margin-right: 15px!important;
-    }
-    .social_icon .fa-telegram, .social_icon .fa-phone {
-        font-size: 37px!important;
     }
 }
 /* Login Page Responsive Screen */
