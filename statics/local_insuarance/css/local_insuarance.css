@@ -5,7 +5,7 @@ ul{
   padding: 0px;
 }
 .navigation ul li:first-child {
-  margin: 0px!important;
+  margin: -20px!important;
 }
 /* Page Title Styles */
 
@@ -57,17 +57,18 @@ ul{
   position: fixed;
   width: 60px;
   height: 100%;
-  background-color: #3e0748;
+  background-color: rgba(2, 24, 45, 255);
   transition: .5s;
   overflow: hidden;
   z-index: 999;
   margin-left: -15px;
+  border-right: 1px solid #2f2f2f;
 }
 .navigation:hover{
   width: 250px;
 }
 .navigation:hover ul li:first-child {
-  display: block;
+  opacity: 1;
   margin: 25px 20px;
 }
 
@@ -83,7 +84,7 @@ ul{
   list-style: none;
 }
 .navigation ul li:first-child{
-  display: none;
+  opacity: 0;
 }
 
 .navigation ul li:first-child:hover{
@@ -91,7 +92,7 @@ ul{
 }
 
 .navigation ul li:hover {
-  background-color: #ea1d63;
+  background-color: #D40B0C;
 }
 .navigation ul li a {
   position: relative;
@@ -109,7 +110,7 @@ ul{
   line-height: 65px;
   text-align: center;
 }
-.navigation ul li a .icon .fa {
+.navigation ul li a .icon i {
   font-size: 24px;
 }
 

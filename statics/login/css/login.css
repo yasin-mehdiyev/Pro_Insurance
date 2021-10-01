@@ -117,49 +117,6 @@
 
 /* Upgrade of Custom Inputs Styles */
 
-/* Refactoring Login Page Footer Social Icons.... */
-
-.login-footer ul li {
-    margin-right: 1rem;
-}
-
-.login-footer ul li:first-child {
-    padding: 0.5rem 0.5rem;
-    border: 1px solid #d40b0c;
-    border-radius: 10px;
-}
-
-.login-footer ul li a {
-    color: #fff;
-}
-
-.login-footer ul li:nth-child(1) a {
-    font-size: 18px;
-}
-
-.login-footer ul li:nth-child(2) a, .login-footer ul li:nth-child(3) a {
-    font-size: 28px;
-}
-
-.login-footer ul li a .fa-phone {
-    color: #d40b0c;
-}
-
-.login-footer ul li a .fa-whatsapp, .login-footer ul li a .fa-telegram {
-    border-radius: 100%;
-}
-
-.login-footer ul li a .fa-whatsapp {
-    background: green;
-}
-
-.login-footer ul li a .fa-telegram {
-    background: #2424eeeb;
-}
-
-/* Refactoring Login Page Footer Social Icons.... */
-
-
 /* Login Page Responsive Screen */
 @media only screen and (min-width: 200px) {
     .login_box_style {
